@@ -1,17 +1,17 @@
-# olympus-{name your plugin}
-This Olympus Plugin needs a description
+# jack-http-cors
+This Jack-Stack Plugin allows you to define source URLs that have CORS authority
+to make requests to your application
 
 
-Put in some examples on how to use it
+## Config
+The only configuration this plugin requires is `whitelist`, which is an array of
+URL roots (defaults shown):
+
 ```js
-var isEB = !!(~['production', 'staging', 'testing'].indexOf(process.env.NODE_ENV));
-
-if (isEB) {
-  olympus.use(require('olympus-your-plugin')(config));
-
-  //or
-  olympus.loadPlugins([
-    require('olympus-your-plugin')(config)
-  ]);
-}
+jack.add(require('jack-http-cors').configure({
+  whitelist: [
+    'http://localhost:3000',
+    'http://localhost:5000',
+  ]
+}));
 ```

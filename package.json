@@ -1,14 +1,17 @@
 {
-  "name": "olympus-plugin-name",
+  "name": "jack-http-cors",
   "version": "1.0.0",
-  "description": "Olympus Plugin {description}",
+  "description": "Jack-Stack Plugin for CORS whitelisting",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dan Crews <dan.crews@vivintsolar.com>",
+  "author": "Dan Crews <crewsd@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "olympus-plugin": "^1.0.0"
+    "cors": "^2.7.1"
+  },
+  "peerDependencies": {
+    "jack-stack": "^2.0.0"
   }
 }
