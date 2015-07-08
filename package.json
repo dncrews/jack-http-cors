@@ -8,6 +8,11 @@
   },
   "author": "Dan Crews <crewsd@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "jack-stack",
+    "plugin",
+    "cors"
+  ],
   "dependencies": {
     "cors": "^2.7.1"
   },
